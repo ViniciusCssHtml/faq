@@ -10,8 +10,11 @@ function faq() {
     dd.forEach((item) => {
       item.classList.remove('ativo');
     });
+    dt.forEach((itens) => {
+      itens.classList.remove('ativo');
+    });
     this.nextElementSibling.classList.add('ativo');
-    this.classList.toggle('ativo');
+    this.classList.add('ativo');
   }
 }
 faq();
